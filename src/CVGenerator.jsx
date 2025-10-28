@@ -593,7 +593,7 @@ const CVGenerator = () => {
           {cvData.certifications.length > 0 && (
             <div>
               <h2 className={`text-base font-bold mb-2`} style={{ color: getTemplateColors(selectedTemplate).text }}>
-                CERTIFICATIONS
+                CENTRES D'INTÉRÊTS
               </h2>
               <div className="space-y-1">
                 {cvData.certifications.map((cert, idx) => (
@@ -932,12 +932,12 @@ const CVGenerator = () => {
 
               {/* Certifications */}
               <div className="bg-white rounded-xl shadow-lg p-6">
-                <h2 className="text-xl font-bold text-gray-800 mb-4">🏆 Certifications</h2>
+                <h2 className="text-xl font-bold text-gray-800 mb-4">🏆 CENTRES D'INTÉRÊTS</h2>
                 <div className="space-y-3">
                   <div className="flex gap-2">
                     <input
                       type="text"
-                      placeholder="Ajouter une certification"
+                      placeholder="Ajouter un centre d'intérêt"
                       value={currentCertification}
                       onChange={(e) => setCurrentCertification(e.target.value)}
                       onKeyPress={(e) => e.key === 'Enter' && addCertification()}
